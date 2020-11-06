@@ -1,0 +1,48 @@
+[
+  {
+     "name": "教室",
+     "numberLimit": 41,
+     "childEvents": [
+       {
+         "name": "扫地",
+         "numberLimit": 9,
+         "childEvents": null
+       },
+       {
+         "name": "拖地",
+         "numberLimit": 9,
+         "childEvents": null
+       },
+       {
+         "name": "杂物间+柜台",
+         "numberLimit": 3,
+         "childEvents": null
+       },
+       {
+         "name": "摆桌椅",
+         "numberLimit": 8,
+         "childEvents": null
+       },
+       {
+         "name": "窗户+窗台",
+         "numberLimit": 6,
+         "childEvents": null
+       },
+       {
+         "name": "图书角+黑板+讲台",
+         "numberLimit": 2,
+         "childEvents": null
+       },
+       {
+         "name": "倒垃圾",
+         "numberLimit": 4,
+         "childEvents": null
+       }
+     ]
+  },
+  {
+    "name": "工地",
+    "numberLimit": 15,
+    "childEvents": null
+  }
+]
