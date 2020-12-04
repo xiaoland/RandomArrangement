@@ -4,7 +4,7 @@ import random
 import json
 
 # SETTINGS
-number_limit = 1
+number_limit = 30
 reset = True
 data_json_fp = "./json/2020_1_23_list.json"
 pass_json_fp = "./json/ramdom_pass_index_list.json"

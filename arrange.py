@@ -12,10 +12,12 @@ vacations = []
 data_json_fp = "./json/2020_1_23_list.json"
 arrangement_event_list_fp = "./json/arrangement_event_list.json"
 pass_json_fp = "./json/ramdom_pass_index_list.json"
+ask_for_leave_list_fp = "./json/ask_for_leave.json"
 
 # INIT
 data = json.load(open(data_json_fp, "r", encoding="utf-8"))
 arrangement_list = json.load(open(arrangement_event_list_fp, "r", encoding="utf-8"))
+ask_for_leave_list = json.load(open(ask_for_leave_list_fp, "r", encoding="utf-8"))
 data_keys = data.keys()
 if reset:
     pass_data = []
@@ -40,7 +42,10 @@ def random_pick(numberLimit_2):
 def fill_in_list(start, end):
     in_list = []
     for i in range(start, end):
-        in_list.append(data[str(random_list[i])]["name"])
+        name = data[str(random_list[i])]["name"]
+        if i in ask_for_leave_list:
+            name = "AFL: " + str(i)
+        in_list.append(name)
     return in_list
 
 
