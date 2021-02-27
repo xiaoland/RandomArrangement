@@ -5,11 +5,11 @@ import random
 import json
 
 # SETTINGS
-numberLimit = 56
+numberLimit = 55
 reset = True
 is_print = True
 vacations = []
-data_json_fp = "./json/2020_1_23_list.json"
+data_json_fp = "./json/class_9_id_list.json"
 arrangement_event_list_fp = "./json/arrangement_event_list.json"
 pass_json_fp = "./json/ramdom_pass_index_list.json"
 ask_for_leave_list_fp = "./json/ask_for_leave.json"
